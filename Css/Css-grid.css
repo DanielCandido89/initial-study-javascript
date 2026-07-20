@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+
+.grid {
+  max-width: calc(100% + 30px);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.grid div {
+  background: tomato;
+  min-height: 100px;
+}
+
+.grid div:nth-child(5) {
+  background: darkred; /*
+  grid-column-start: span 1;
+  grid-column-start: span 2;
+  grid-row: um / quatro;
+  */
+}

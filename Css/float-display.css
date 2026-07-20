@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.grid {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 73px;
+  width: 100%;
+}
+
+.grid::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.grid .col {
+  height: 300px;
+  padding: 15px;
+  float: left;
+}
+
+.grid .col-content {
+  width: 200px;
+  height: 200px;
+  background: #00ffeb;
+  box-shadow: 5px 5px 15px black;
+}
+
+.menu {
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.842);
+}
+
+.menu ul {
+  list-style: none;
+  display: block;
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu ul li a {
+  display: block;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover {
+  background: #333;
+}
+
+.full-page {
+  background-color: red;
+  padding: 73px 30px 30px;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.full-page-content {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 568px) {
+  .grid .col {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 569px) and (max-width: 768px) {
+  .grid .col {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 1200px) {
+  .grid .col {
+    width: 33.33%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .grid .col {
+    width: 25%;
+  }
+}

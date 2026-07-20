@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex; /* block */
+  background: yellow;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 800px;
+  align-items: flex-start;
+}
+
+.flex-item {
+  color: white;
+  background: red;
+  width: 100%;
+}
+
+.two-columns {
+  display: flex;
+}
+
+.two-columns .col {
+  background: lawngreen;
+  margin: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-size: 24px;
+}
+
+p {
+  margin: 0 0 24px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.gallery .img {
+  flex: 0 0 60px;
+  height: 50px;
+  background: blue;
+}
