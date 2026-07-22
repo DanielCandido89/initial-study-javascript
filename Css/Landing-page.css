@@ -187,11 +187,10 @@ table th {
 
 .intro-content {
   display: grid;
-  position: relative;
-  top: -8rem;
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
   min-height: 100vh;
+  align-items: center;
 }
 
 .intro-text-content,
